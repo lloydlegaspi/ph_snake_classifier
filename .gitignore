@@ -1,0 +1,40 @@
+# Ignore archived folder containing old versions
+/archived/
+
+# Ignore HTML files
+/snake-classifier.html
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Model files (if they're large)
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Images and datasets (if they're large)
+/SnakeDataset/
+/SplitSnakeDataset/
+/SnakeDataset.zip
+/Philippine-Snake-Species-Dataset.zip
