@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Philippine Snake Classification System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="app-branding">
+        <i class="fas fa-snake logo"></i>
+        <div class="app-title">
+          <h1>Philippine Snake Classification System</h1>
+          <span>AI-powered snake identification system</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="home.html" class="nav-link">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <a href="about.html" class="nav-link active">
+          <i class="fas fa-info-circle"></i> About
+        </a>
+      </nav>
+    </header>
+
+    <div class="panel">
+  <div class="section-header">
+    <h2 class="section-title">
+      <i class="fas fa-info-circle"></i> About the System
+    </h2>
+  </div>
+  <div>
+    <p>
+      The Philippine Snake Classification System is an AI-powered tool designed primarily for medical applications.
+      It helps to identify snake species from images, particularly to determine if a snake is venomous or non-venomous.
+      This can be crucial information when someone has been bitten by a snake and medical professionals need to quickly
+      identify the species to provide appropriate treatment.
+    </p>
+    <p>
+      This system is focused specifically on Philippine snake species, with a limited scope of fourteen terrestrial species:
+      six medically important venomous species as classified by the World Health Organization, and eight non-venomous
+      look-alikes that are often confused with their venomous counterparts.
+    </p>
+
+    <div class="warning-box">
+      <p>
+        <strong>Important:</strong> This tool is intended as a clinical decision support system only.
+        Always use clinical judgment and follow established protocols for snakebite treatment.
+        The system cannot identify species outside the fourteen species it was trained on.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <div class="accordion-section">
+      <div class="accordion-header">
+        <h2 class="accordion-title">
+          <i class="fas fa-question-circle"></i> How to Use
+        </h2>
+        <div class="accordion-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          The Philippine Snake Classification System is designed to be straightforward and easy to use,
+          particularly in emergency situations when quick identification is necessary.
+        </p>
+
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Upload an Image</h3>
+              <p class="step-description">
+                Click on the upload area or drag and drop an image of the snake. The system accepts PNG, JPG, or JPEG formats.
+                For best results, use a clear, well-lit image showing as much of the snake as possible.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3 class="step-title">Analyze the Image</h3>
+              <p class="step-description">
+                After uploading, click the "Classify Snake" button to begin the analysis. The system will process the image
+                using an AI model specifically trained on Philippine snake species.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3 class="step-title">Review Results</h3>
+              <p class="step-description">
+                The system will display the predicted snake species along with:
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Scientific name</li>
+                    <li>Family name</li>
+                  <li>Venomous status (venomous or non-venomous)</li>
+                  <li>Confidence score of the prediction</li>
+                  <li>Alternative possible species with their respective confidence scores</li>
+                  <li>Brief descriptions of each identified species</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p>
+            <strong>Note:</strong> The quality of the image significantly affects the accuracy of the classification.
+            When possible, provide clear images that show distinctive features of the snake.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-section">
+      <div class="accordion-header">
+        <h2 class="accordion-title">
+          <i class="fas fa-clipboard-list"></i> Species in Scope
+        </h2>
+        <div class="accordion-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          The system is trained to classify the following fourteen Philippine snake species.
+          These include six venomous species and eight non-venomous look-alikes selected based on
+          their morphological similarities and geographic overlap.
+        </p>
+
+        <div class="species-category">
+          <h3 class="species-category-title" style="color: var(--danger); margin: 30px 0 15px 0; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-exclamation-triangle"></i> Venomous Species
+          </h3>
+          <div class="species-grid">
+            <!-- Venomous Species Cards -->
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Philippine Cobra</h3>
+                  <p>Naja philippinensis</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/philippine_cobra.png" alt="Philippine Cobra" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Belongs to the genus Naja (family Elapidae). Characterized by dorsal scales arranged in 21-23 longitudinal rows at midbody with black or dark brown dorsal coloration.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Elapidae</div>
+              </div>
+            </div>
+
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Samar Cobra</h3>
+                  <p>Naja samarensis</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/samar_cobra.png" alt="Samar Cobra" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Features light-yellow ventral scales anteriorly followed by a black band that fades posteriorly. Belongs to genus Naja (family Elapidae).
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Elapidae</div>
+              </div>
+            </div>
+
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Equatorial Cobra</h3>
+                  <p>Naja sumatrana</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/equatorial_cobra.png" alt="Equatorial Cobra" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Dorsal scales in 17–25 longitudinal rows at midbody. Postnasal scale vertically elongate, separated/narrowly contacting prefrontal scale. Lacks anterior black ventral band.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Elapidae</div>
+              </div>
+            </div>
+
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Philippine Pit Viper</h3>
+                  <p>Trimeresurus flavomaculatus</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/philippine_pit_viper.png" alt="Philippine Pit Viper" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  A venomous pit viper species endemic to the Philippines, characterized by its green coloration with yellow or white spots along the body.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Viperidae</div>
+              </div>
+            </div>
+
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>North Philippine Temple Pit Viper</h3>
+                  <p>Tropidolaemus subannulatus</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/north_philippine_temple_pit_viper.png" alt="North Philippine Temple Pit Viper" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  A venomous pit viper found in the northern regions of the Philippines, typically with distinctive banded patterns.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Viperidae</div>
+              </div>
+            </div>
+
+            <div class="species-card venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>South Philippine Temple Pit Viper</h3>
+                  <p>Tropidolaemus philippensis</p>
+                </div>
+                <div class="species-status">Venomous</div>
+              </div>
+              <img src="images/south_philippine_temple_pit_viper.png" alt="South Philippine Temple Pit Viper" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Endemic to southern Philippines, this pit viper has a triangular head and heat-sensing pits between the eyes and nostrils.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Viperidae</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="species-category">
+          <h3 class="species-category-title" style="color: var(--primary); margin: 40px 0 15px 0; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-check-circle"></i> Non-venomous Species
+          </h3>
+          <div class="species-grid">
+            <!-- Non-venomous Species Cards -->
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Philippine Rat Snake</h3>
+                  <p>Coelognathus erythrurus</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/philippine_rat_snake.png" alt="Philippine Rat Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Often visually confused with the Philippine Cobra due to similarities in coloration and body shape. Adults have a tail lighter than the posterior body.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Philippine Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Variable Reed Snake</h3>
+                  <p>Calamaria lumbricoidea</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/variable_reed_snake.png" alt="Variable Reed Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  A small, slender snake with smooth scales and a blunt head, often confused with young venomous snakes.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Samar Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Common Wolf Snake</h3>
+                  <p>Lycodon capucinus</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/common_wolf_snake.png" alt="Common Wolf Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Distinguished by its enlarged anterior maxillary teeth and often displays a pattern that may be confused with cobras.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Samar Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Philippine Shrub Snake</h3>
+                  <p>Oxyrhabdium modestum</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/philippine_shrub_snake.png" alt="Philippine Shrub Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  An endemic snake species with a slender body and uniform coloration, often mistaken for young cobras.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Samar Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Keel-scaled Rat Snake</h3>
+                  <p>Ptyas carinata</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/keel-scaled_rat_snake.png" alt="Keel-scaled Rat Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Features distinctive keeled scales and can grow to significant lengths, sometimes confused with cobras when threatened.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Equatorial Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Asian Sunbeam Snake</h3>
+                  <p>Xenopeltis unicolor</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/asian_sunbeam_snake.png" alt="Asian Sunbeam Snake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  Known for its iridescent scales that reflect rainbow colors in sunlight, with a smooth, glossy appearance.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Xenopeltidae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Equatorial Cobra</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Red-tailed Green Ratsnake</h3>
+                  <p>Gonyosoma oxycephalum</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/red-tailed_green_ratsnake.png" alt="Red-tailed Green Ratsnake" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  A bright green snake with a distinctive reddish tail, sometimes mistaken for the green pit vipers.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Pit Vipers</div>
+              </div>
+            </div>
+
+            <div class="species-card non-venomous">
+              <div class="species-header">
+                <div class="species-name">
+                  <h3>Maren's Bronzeback</h3>
+                  <p>Dendrelaphis marenae</p>
+                </div>
+                <div class="species-status">Non-venomous</div>
+              </div>
+              <img src="images/marens_bronzeback.png" alt="Maren's Bronzeback" class="species-image">
+              <div class="species-body">
+                <div class="species-description">
+                  A slender tree snake with a bronze-colored back and bluish flanks, sometimes confused with pit vipers due to its coloration.
+                </div>
+                <div class="species-detail"><i class="fas fa-tag"></i>Family: Colubridae</div>
+                <div class="species-detail"><i class="fas fa-copy"></i>Resembles: Pit Vipers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-section">
+      <div class="accordion-header">
+        <h2 class="accordion-title">
+          <i class="fas fa-exclamation-circle"></i> Limitations
+        </h2>
+        <div class="accordion-toggle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="accordion-content">
+        <p>
+          The Philippine Snake Classification System has several important limitations to be aware of:
+        </p>
+        <ul style="margin-left: 20px; margin-bottom: 20px;">
+          <li><strong>Limited Species:</strong> The system can only identify the fourteen snake species included in this study. It cannot accurately classify other Philippine snake species or snakes from other regions.</li>
+          <li><strong>Image Quality Dependency:</strong> The accuracy of classification is highly dependent on the quality, lighting, and angle of the submitted images.</li>
+          <li><strong>No Behavioral Analysis:</strong> The system does not consider snake behavior, habitat, or other ecological factors in its classification.</li>
+          <li><strong>Not for Marine Snakes:</strong> The system does not include aquatic or marine snake species in its classification scope.</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p><strong>Philippine Snake Classification System © 2025 | System Prototype</strong></p>
+      <p>
+        This tool is intended as a clinical decision support system only. Always use clinical judgment and follow
+        established protocols.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Main accordion functionality
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+          // Toggle the current accordion
+          const content = this.nextElementSibling;
+          const toggle = this.querySelector('.accordion-toggle');
+          
+          toggle.classList.toggle('active');
+          
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.classList.remove('active');
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
